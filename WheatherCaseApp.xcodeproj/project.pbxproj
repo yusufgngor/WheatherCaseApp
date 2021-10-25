@@ -14,6 +14,16 @@
 		195FC57427242A3000645170 /* WheatherCaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195FC57327242A3000645170 /* WheatherCaseAppTests.swift */; };
 		195FC57E27242A3000645170 /* WheatherCaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195FC57D27242A3000645170 /* WheatherCaseAppUITests.swift */; };
 		195FC58027242A3000645170 /* WheatherCaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195FC57F27242A3000645170 /* WheatherCaseAppUITestsLaunchTests.swift */; };
+		1967594227242E3C00BE8798 /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967594127242E3C00BE8798 /* WeatherResponseModel.swift */; };
+		1967594427242F7F00BE8798 /* WheatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967594327242F7F00BE8798 /* WheatherAPI.swift */; };
+		196759462724303400BE8798 /* WeatherLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196759452724303400BE8798 /* WeatherLocationModel.swift */; };
+		1967594927243A9C00BE8798 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1967594827243A9C00BE8798 /* Alamofire */; };
+		196B5FD02724C80600C19146 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B5FCF2724C80600C19146 /* LocationManager.swift */; };
+		199D61592726DEAC00FAB0D5 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199D61582726DEAC00FAB0D5 /* ViewModelState.swift */; };
+		19F9E18527246C7400BABF3F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9E18427246C7300BABF3F /* Errors.swift */; };
+		19F9E18727247B9300BABF3F /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9E18627247B9300BABF3F /* WeatherViewModel.swift */; };
+		19F9E18927248B5C00BABF3F /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9E18827248B5C00BABF3F /* LocationDetailView.swift */; };
+		19F9E18B27249D9300BABF3F /* LocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9E18A27249D9300BABF3F /* LocationDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,15 @@
 		195FC57927242A3000645170 /* WheatherCaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherCaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		195FC57D27242A3000645170 /* WheatherCaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherCaseAppUITests.swift; sourceTree = "<group>"; };
 		195FC57F27242A3000645170 /* WheatherCaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherCaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1967594127242E3C00BE8798 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
+		1967594327242F7F00BE8798 /* WheatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherAPI.swift; sourceTree = "<group>"; };
+		196759452724303400BE8798 /* WeatherLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocationModel.swift; sourceTree = "<group>"; };
+		196B5FCF2724C80600C19146 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		199D61582726DEAC00FAB0D5 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		19F9E18427246C7300BABF3F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		19F9E18627247B9300BABF3F /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		19F9E18827248B5C00BABF3F /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		19F9E18A27249D9300BABF3F /* LocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1967594927243A9C00BE8798 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +114,10 @@
 		195FC56127242A2F00645170 /* WheatherCaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				199D61572726DDD400FAB0D5 /* View */,
+				199D61562726DBF000FAB0D5 /* ViewModel */,
+				199D61542726DBCF00FAB0D5 /* Logic */,
 				195FC56227242A2F00645170 /* WheatherCaseAppApp.swift */,
-				195FC56427242A2F00645170 /* ContentView.swift */,
 				195FC56627242A3000645170 /* Assets.xcassets */,
 				195FC56827242A3000645170 /* Preview Content */,
 			);
@@ -127,6 +149,61 @@
 			path = WheatherCaseAppUITests;
 			sourceTree = "<group>";
 		};
+		195FC58E27242C4000645170 /* WheatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				195FC58F27242C7500645170 /* models */,
+				1967594327242F7F00BE8798 /* WheatherAPI.swift */,
+			);
+			path = WheatherAPI;
+			sourceTree = "<group>";
+		};
+		195FC58F27242C7500645170 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1967594127242E3C00BE8798 /* WeatherResponseModel.swift */,
+				196759452724303400BE8798 /* WeatherLocationModel.swift */,
+				19F9E18427246C7300BABF3F /* Errors.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		199D61542726DBCF00FAB0D5 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				199D61552726DBDF00FAB0D5 /* LocationManager */,
+				195FC58E27242C4000645170 /* WheatherAPI */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		199D61552726DBDF00FAB0D5 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				196B5FCF2724C80600C19146 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		199D61562726DBF000FAB0D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19F9E18627247B9300BABF3F /* WeatherViewModel.swift */,
+				19F9E18A27249D9300BABF3F /* LocationDetailViewModel.swift */,
+				199D61582726DEAC00FAB0D5 /* ViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		199D61572726DDD400FAB0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19F9E18827248B5C00BABF3F /* LocationDetailView.swift */,
+				195FC56427242A2F00645170 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +220,9 @@
 			dependencies = (
 			);
 			name = WheatherCaseApp;
+			packageProductDependencies = (
+				1967594827243A9C00BE8798 /* Alamofire */,
+			);
 			productName = WheatherCaseApp;
 			productReference = 195FC55F27242A2F00645170 /* WheatherCaseApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 195FC55627242A2F00645170;
+			packageReferences = (
+				1967594727243A9C00BE8798 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 195FC56027242A2F00645170 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196759462724303400BE8798 /* WeatherLocationModel.swift in Sources */,
+				19F9E18B27249D9300BABF3F /* LocationDetailViewModel.swift in Sources */,
+				196B5FD02724C80600C19146 /* LocationManager.swift in Sources */,
 				195FC56527242A2F00645170 /* ContentView.swift in Sources */,
+				19F9E18927248B5C00BABF3F /* LocationDetailView.swift in Sources */,
+				1967594227242E3C00BE8798 /* WeatherResponseModel.swift in Sources */,
+				199D61592726DEAC00FAB0D5 /* ViewModelState.swift in Sources */,
+				19F9E18727247B9300BABF3F /* WeatherViewModel.swift in Sources */,
 				195FC56327242A2F00645170 /* WheatherCaseAppApp.swift in Sources */,
+				19F9E18527246C7400BABF3F /* Errors.swift in Sources */,
+				1967594427242F7F00BE8798 /* WheatherAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +514,8 @@
 				DEVELOPMENT_TEAM = 567DNSK3F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WheatherCaseApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Durrum;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +546,8 @@
 				DEVELOPMENT_TEAM = 567DNSK3F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WheatherCaseApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Durrum;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -607,6 +703,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1967594727243A9C00BE8798 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1967594827243A9C00BE8798 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1967594727243A9C00BE8798 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 195FC55727242A2F00645170 /* Project object */;
 }
